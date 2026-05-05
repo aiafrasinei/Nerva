@@ -20,14 +20,14 @@ The goal is to capture the enemy king.
 
     * Piece shapes
 
-        Pawns (Box, HalfBox, SmallBox), King (Cylinder)
+        Pawns (Boxes), King (Cylinder)
 
         ![White Pieces](imgs/WhitePieces.png)
     
     * 96 pieces (pawns)
-        * 32 boxes
-        * 32 half boxes
-        * 32 small boxes
+        * 32 large pawns
+        * 32 medium pawns
+        * 32 small pawns
 
     * the king (cylinder)
 
@@ -35,14 +35,14 @@ The goal is to capture the enemy king.
 
     * Piece shapes
 
-        Pawns (Box, HalfBox, SmallBox), King (Cylinder)
+        Pawns (Boxes), King (Cylinder)
 
         ![Black Pieces](imgs/BlackPieces.png)
 
     * 96 pieces (pawns)
-        * 32 boxes
-        * 32 half boxes
-        * 32 small boxes
+        * 32 large pawns
+        * 32 medium pawns
+        * 32 small pawns
 
     * the king (cylinder)
 
@@ -62,15 +62,29 @@ Think of the board as 3 stacked boards on top of each other.
 
 Chess algebraic notation is used to identify board locations.
 
-https://en.wikipedia.org/wiki/Algebraic_notation_(chess)
+This is extended for Nerva by using the following syntax to identify the stacked boards:
 
-This is extended for Nerva by using the following syntax to identify levels:
+[row][column]_[board] - A pawn is placed on the board.
 
-[column][row]_[level] - A pawn is placed on the board level.
+* [row]
+  
+  From a to h
 
-[K]_[column][row]_[level] - King reveal.
+* [column]
 
-[-K]_[column][row]_[level] - King is dead, game over.
+    From 1 to 8
+
+* [board]
+
+    From 1 to 3
+
+    Board 1 is the normal chess board
+
+    This is how we identify the pieces on the 3 stacked boards
+
+[K]_[row][column]_[board] - King reveal.
+
+[-K]_[row][column]_[board] - King is dead, game over.
 
 Examples:
 
@@ -91,13 +105,13 @@ Examples:
 
 ### The pawns
 
-On a board tile, stack the pieces in this order: Box, HalfBox, and SmallBox.
+On a board tile, stack the pieces in this order: Large pawn, Medium pawn, Small pawn.
 
 ![Stacked Pawns](imgs/NervaBoard400Pawns.png)
 
 Thinking in terms of stacked boards:
 
-Board 1 uses the normal boxes, board 2 uses the half boxes, and board 3 uses the small boxes.
+Board 1 uses the large pawns, board 2 uses the medium pawns, and board 3 uses the small pawns.
 
 Examples:
 
@@ -132,7 +146,7 @@ The attack and defense will happen on these adjacent tiles.
 
 ![PawnAttacks](imgs/NervaPawnAttack.png)
 
-More details on this are in the rules of defense and attacking sections. 
+More details in the rules of defending, attacking, stacking sections. 
 
 ### The king
 
@@ -148,7 +162,7 @@ Each player gets their 96 pawns and their king.
 
 The White player places the first pawn on the board. 
 
-The pawns can be placed on any empty tile or on top of existing pawns.
+The pawns can be placed on any empty tile.
 
 A maximum of 3 pawns can be stacked on a tile.
 
@@ -164,7 +178,7 @@ Another option is to have a friend or spectator decide the positions of both kin
 
 The king will be placed on the board when it is revealed—that is, when a player places a pawn on its position.
 
-When the king is revealed, it is the duty of the player or spectator to place it on the board.
+When the king is revealed, the player or spectator will place it on the board.
 
 ### Game started
 
@@ -172,7 +186,7 @@ The starting player places a pawn, and then the players take turns placing pawns
 
 The game is over when all pawns are placed or one of the kings is dead.
 
-## The rules of defense
+## The rules of defending
 
 A pawn will add a defense point to all adjacent friendly pawns (or king).
 
@@ -188,13 +202,13 @@ Any friendly pawn on these positions will receive an additional defense point fr
 
 A pawn will add an attack point to all adjacent enemy pawns (or king).
 
-Adjacent enemy pawns can be attacked. 
+Adjacent enemy pawns can be attacked.
+
+An attack will be declared by the player, each attack takes a turn.
 
 If the attack points are higher than the defense points on a particular pawn, the attack will be successful.
 
 The pawn will be removed from the board and replaced by another pawn from the attacker.
-
-Each attack takes a turn.
 
 If you make a mistake and make an unsuccessful attack, the turn will change.
 
@@ -202,7 +216,7 @@ If you make a mistake and make an unsuccessful attack, the turn will change.
 
 When 3 pawns from the same player occupy the same position on all 3 boards (a stack of 3 pawns), then each receives 3 defense points and 3 attack points.
 
-When such a stack is formed, the existing pawn points will be replaced with 3.
+When such a stack is formed, the existing pawn attack/defense points will be replaced with 3.
 
 There is no addition of existing points, so be careful with this.
 
