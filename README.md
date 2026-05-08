@@ -54,7 +54,7 @@ A standard chess board (8x8).
 
 ### The battle environment
 
-A maximum of three pawns can be placed on top of each other anywhere on the board.
+A maximum of 3 pawns can be placed on top of each other anywhere on the board.
 
 Think of the board as 3 stacked boards on top of each other.
 
@@ -84,7 +84,7 @@ This is extended for Nerva by using the following syntax to identify the stacked
 
 [K]_[row][column]_[board] - King reveal.
 
-[-K]_[row][column]_[board] - King is dead, game over.
+[-K]_[row][column]_[board] - King is captured, game over.
 
 Examples:
 
@@ -96,7 +96,7 @@ Examples:
 
 * K_a1_3 - This is a king reveal.
 
-* -K_a2_2 - The king is dead, game over.
+* -K_a2_2 - The king is captured, game over.
 
 * a1_1 d4_2 a1_3 K_A1_3
 
@@ -107,13 +107,13 @@ Examples:
 
 On a board tile, stack the pieces in this order: Large pawn, Medium pawn, Small pawn.
 
-![Stacked Pawns](imgs/NervaBoard400Pawns.png)
-
 Thinking in terms of stacked boards:
 
 Board 1 uses the large pawns, board 2 uses the medium pawns, and board 3 uses the small pawns.
 
 Examples:
+
+![Pawns not stacked](imgs/NervaBoard400Pawns.png)
 
 * c3_2 (White Pawn on board 2)
 
@@ -125,6 +125,17 @@ Examples:
 
 * f6_2 f6_3 (White Pawn on board 2, Black Pawn on board 3)
 
+![Stacked Pawns](imgs/NervaBoard400PawnsStacked.png)
+
+* c3_2 (White Pawn on board 2)
+
+* g2_1 (Black Pawn on board 1)
+
+* d4_1 d4_2 d4_3 (Black Pawn board 1, White Pawn board 2, Black Pawn board 3)
+
+* c6_3 (Black Pawn on board 3)
+
+* f6_2 f6_3 (White Pawn on board 2, Black Pawn on board 3)
 
 #### White
 
@@ -184,7 +195,7 @@ When the king is revealed, the player or spectator will place it on the board.
 
 The starting player places a pawn, and then the players take turns placing pawns.
 
-The game is over when all pawns are placed or one of the kings is dead.
+The game is over when one king is captured or all pawns are placed. 
 
 ## The rules of defending
 
