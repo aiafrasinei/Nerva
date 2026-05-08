@@ -18,18 +18,18 @@ The goal is to capture the enemy king.
 
 * White
 
-    * Piece shapes
-
-        Pawns (Boxes), King (Cylinder)
+   * Piece shapes
+     
+       Pawns (Boxes), King (Cylinder)
 
         ![White Pieces](imgs/WhitePieces.png)
     
-    * 96 pawns
+    * 96 White pawns
         * 32 large pawns
         * 32 medium pawns
         * 32 small pawns
 
-    * the king
+    * the White king
 
 * Black
 
@@ -39,12 +39,12 @@ The goal is to capture the enemy king.
 
         ![Black Pieces](imgs/BlackPieces.png)
 
-    * 96 pawns
+    * 96 Black pawns
         * 32 large pawns
         * 32 medium pawns
         * 32 small pawns
 
-    * the king
+    * the Black king
 
 ## The board
 
@@ -60,7 +60,7 @@ Think of the board as 3 stacked boards on top of each other.
 
 ### Game notation
 
-Chess algebraic notation is used to identify board locations.
+Chess notation is used to identify board locations.
 
 This is extended for Nerva by using the following syntax to identify the stacked boards:
 
@@ -87,6 +87,8 @@ This is extended for Nerva by using the following syntax to identify the stacked
 [-K]_[row][column]_[board] - King is captured, game over.
 
 Examples:
+
+![Empty board](imgs/EmptyBoard.png)
 
 * a1_1
 
@@ -166,7 +168,7 @@ More details in the rules of defending, attacking, stacking sections.
 
 ### The king
 
-The king has no attack points.
+The king has no attack/defense points.
 
 ## The rules of placement
 
@@ -198,7 +200,7 @@ When the king is revealed, the player or spectator will place it on the board.
 
 ### Game started
 
-The starting player places a pawn, and then the players take turns placing pawns.
+The White player places a pawn, and then the players take turns placing pawns.
 
 The game is over when one king is captured or all pawns are placed. 
 
