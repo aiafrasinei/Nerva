@@ -24,12 +24,12 @@ The goal is to capture the enemy king.
 
         ![White Pieces](imgs/WhitePieces.png)
     
-    * 96 pieces (pawns)
+    * 96 pawns
         * 32 large pawns
         * 32 medium pawns
         * 32 small pawns
 
-    * the king (cylinder)
+    * the king
 
 * Black
 
@@ -39,12 +39,12 @@ The goal is to capture the enemy king.
 
         ![Black Pieces](imgs/BlackPieces.png)
 
-    * 96 pieces (pawns)
+    * 96 pawns
         * 32 large pawns
         * 32 medium pawns
         * 32 small pawns
 
-    * the king (cylinder)
+    * the king
 
 ## The board
 
@@ -115,27 +115,32 @@ Examples:
 
 ![Pawns not stacked](imgs/NervaBoard400Pawns.png)
 
-* c3_2 (White Pawn on board 2)
+* d2_2 (White pawn on board 2)
 
-* g2_1 (Black Pawn on board 1)
+* c3_2 (Black pawn on board 1)
 
-* d4_1 d4_2 d4_3 (Black Pawn board 1, White Pawn board 2, Black Pawn board 3)
-
-* c6_3 (Black Pawn on board 3)
-
-* f6_2 f6_3 (White Pawn on board 2, Black Pawn on board 3)
+* g2_1 (Black pawn on board 1)
+  
+* h7_1 (White pawn on board 1)
+  
+* b5_3 (White pawn on board 3)
+  
+* c6_3 (Black pawn on board 3)
 
 ![Stacked Pawns](imgs/NervaBoard400PawnsStacked.png)
 
-* c3_2 (White Pawn on board 2)
+* b8_1 b8_2 b8_3 (White pawns on boards: 1, 2, 3)
 
-* g2_1 (Black Pawn on board 1)
+* f4_1 f4_2 f4_3 (Black pawns on boards: 1, 2, 3)
 
-* d4_1 d4_2 d4_3 (Black Pawn board 1, White Pawn board 2, Black Pawn board 3)
+* d4_1 d4_2 d4_3 (Black pawn on board 1,
+  White pawn on board 2, Black pawn on board 3)
 
-* c6_3 (Black Pawn on board 3)
-
-* f6_2 f6_3 (White Pawn on board 2, Black Pawn on board 3)
+* f6_2 f6_3 (White pawn on board 2,
+  Black pawn on board 3)
+  
+* e7_2 e7_3 (Black pawn on board 2,
+  White pawn on board 3)
 
 #### White
 
