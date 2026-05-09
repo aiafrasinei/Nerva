@@ -88,20 +88,11 @@ This is extended for Nerva by using the following syntax to identify the stacked
 
 Examples:
 
-![Empty board](imgs/EmptyBoard.png)
+![Early game notation](imgs/NervaBoard400PawnsEarlyGame.png)
 
-* a1_1
+* Notation:
 
-* d4_2
-
-* a1_3
-
-* K_a1_3 - This is a king reveal.
-
-* -K_a2_2 - The king is captured, game over.
-
-* a1_1 d4_2 a1_3 K_A1_3
-
+ 1. h7_1 2. g2_1 3. e4_2 4. e5_2 5. a7_3 6. b6_3
 
 ## The pieces
 
@@ -120,14 +111,18 @@ Examples:
 * d2_2 (White pawn on board 2)
 
 * c3_2 (Black pawn on board 1)
-
-* g2_1 (Black pawn on board 1)
   
 * h7_1 (White pawn on board 1)
+
+* g2_1 (Black pawn on board 1)
   
 * b5_3 (White pawn on board 3)
   
 * c6_3 (Black pawn on board 3)
+
+* Notation:
+
+1. d2_2 2. c3_2 3. h7_1 4. g2_1 5. b5_3 6.c6_3
 
 ![Stacked Pawns](imgs/NervaBoard400PawnsStacked.png)
 
@@ -141,8 +136,12 @@ Examples:
 * f6_2 f6_3 (White pawn on board 2,
   Black pawn on board 3)
   
-* e7_2 e7_3 (Black pawn on board 2,
+* e7_1 e7_2 e7_3 (White pawn on boar 1, Black pawn on board 2,
   White pawn on board 3)
+
+* Notation:
+
+1. b8_1 2. f4_1 3. b8_2 4. f4_2 5. b8_3 6. f4_3 7. f6_2 8. f6_3 9. e7_3 10. e7_2 11. e7_1 12. d4_1 13. d4_2 14. d4_3
 
 #### White
 
