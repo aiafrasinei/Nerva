@@ -108,36 +108,11 @@ Examples:
 
 ![Pawns not stacked](imgs/NervaBoard400Pawns.png)
 
-* d2_2 (White pawn on board 2)
-
-* c3_2 (Black pawn on board 1)
-  
-* h7_1 (White pawn on board 1)
-
-* g2_1 (Black pawn on board 1)
-  
-* b5_3 (White pawn on board 3)
-  
-* c6_3 (Black pawn on board 3)
-
 * Notation:
 
 1. d2_2 2. c3_2 3. h7_1 4. g2_1 5. b5_3 6.c6_3
 
 ![Stacked Pawns](imgs/NervaBoard400PawnsStacked.png)
-
-* b8_1 b8_2 b8_3 (White pawns on boards: 1, 2, 3)
-
-* f4_1 f4_2 f4_3 (Black pawns on boards: 1, 2, 3)
-
-* d4_1 d4_2 d4_3 (Black pawn on board 1,
-  White pawn on board 2, Black pawn on board 3)
-
-* f6_2 f6_3 (White pawn on board 2,
-  Black pawn on board 3)
-  
-* e7_1 e7_2 e7_3 (White pawn on boar 1, Black pawn on board 2,
-  White pawn on board 3)
 
 * Notation:
 
@@ -189,13 +164,29 @@ The king's location is hidden from the enemy player.
 
 Each player decides at the beginning where their king will be located and keeps the information to themselves.
 
-For example, it can be written on a piece of paper.
+The chosen location can by anywhere on the 3 boards, use the game notation.
 
-Another option is to have a friend or spectator decide the positions of both kings.
+Each player will write the position on a piece of paper.
 
-The king will be placed on the board when it is revealed—that is, when a player places a pawn on its position.
+When a player places a pawn on the king position the king will be revealed.
 
-When the king is revealed, the player or spectator will place it on the board.
+The player will place his king on the board.
+
+In the unlikely event of both player chosing the same king location:
+
+* place the white king in the location when revealed
+
+* play normally as if both kings are in that location 
+
+Example:
+
+![Revealed Kings](imgs/NervaBoard400Kings.png)
+
+Both kings are revealed.
+
+* Notation:
+
+1. K_c4_2 2. K_f6_1
 
 ### Game started
 
@@ -239,7 +230,10 @@ There is no addition of existing points, so be careful with this.
 
 Example:
 
-c3_1 c3_2 c3_3
+![Stacks](imgs/NervaBoard400Stacks.png)
+
+* Notation
+1. f4_1 2. e5_1 3. f4_2 4. e5_2 5. f4_3 6. e5_3
 
 ## Goal 
 
@@ -253,6 +247,3 @@ Email:
 
 alexandruafrasinei@gmail.com
 
-GitHub website:
-
-https://github.com/aiafrasinei/Nerva
