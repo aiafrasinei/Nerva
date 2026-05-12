@@ -82,6 +82,8 @@ This is extended for Nerva by using the following syntax to identify the stacked
 
     This is how we identify the pieces on the 3 stacked boards
 
+[row][column]_[board] -> [row][column]_[board] - Attack notation
+
 [K]_[row][column]_[board] - King reveal.
 
 [-K]_[row][column]_[board] - King is captured, game over.
@@ -134,7 +136,7 @@ If a pawn is at c3, the adjacent tiles are:
 
 b2 c2 d2 d3 d4 b4 c4 b3
 
-The attack and defense will happen on these adjacent tiles.
+The attack and defense will happen on these adjacent tiles on the same board.
 
 ![PawnAttacks](imgs/NervaPawnAttack.png)
 
@@ -196,9 +198,7 @@ The game is over when one king is captured or all pawns are placed.
 
 ## The rules of defending
 
-A pawn will add a defense point to all adjacent friendly pawns (or king).
-
-Example:
+A pawn will add an attack/defense point to all adjacent friendly pawns (or king) on the same board.
 
 If a pawn is at c3, the adjacent tiles are:
 
@@ -206,9 +206,41 @@ b2 c2 d2 d3 d4 b4 c4 b3
 
 Any friendly pawn on these positions will receive an additional defense point from the c3 pawn.
 
+Examples:
+
+![Rules of defending](imgs/NervaRulesOfDefending.png)
+
+* Case 1
+
+  f3_2 White pawn, g2_2 Black pawn, h1_2 White pawn
+
+  Any attack will fail, each piece here have 1 attack/defense point.
+
+* Case 2
+
+  d2_1 White pawn, d3_1 Black pawn, c3_1 Black pawn
+
+  d2_1 -> d3_1 : failed attack (1 vs 2)
+
+* Case 3
+
+  a1_3 Black pawn, b1_3 White pawn, a2_3 White pawn
+
+  a1_3 -> b1_3 : failed attack (1 vs 2)
+
+* Case 4
+
+  a8_2 White pawn, a7_2 White pwan, a6_3 White Pawn c8_2 Black pawn, b7_2 Black pawn, c6_2 Black pawn
+
+  b7_2 -> a7_2 : failed attack (3 vs 3)
+
+  b7_2 -> a8_2 : successful attack (3 vs 2)
+
+  a6_2 -> b7_2 : failed attack (2 vs 3)
+
 ## The rules of attacking
 
-A pawn will add an attack point to all adjacent enemy pawns (or king).
+A pawn will add an attack point to all adjacent enemy pawns (or king) on the same board.
 
 Adjacent enemy pawns can be attacked.
 
@@ -220,13 +252,43 @@ The pawn will be removed from the board and replaced by another pawn from the at
 
 If you make a mistake and make an unsuccessful attack, the turn will change.
 
+Examples:
+
+![Rules of attacking](imgs/NervaRulesOfAttacking.png)
+
+* Case 1
+
+  f5_2 White pawn, e6_2 Black pawn, g6_1 Black pawn
+
+  e6_2 -> f5_2 : failed attack, both have one attack/defense points
+
+  g6_1 Black pawn is on another board, cannot attack.
+
+* Case 2
+
+  d2_1 White pawn, d3_1 Black pawn, c3_1 Black pawn
+
+  d3_1 -> d2_1 : successful attack (2 vs 1)
+
+* Case 3
+
+  a1_3 Black pawn, b1_3 White pawn, a2_3 White pawn
+
+  b1_3 -> a1_3 : successful attack (2 vs 1)
+
+* Case 4
+
+  a8_2 White pawn, c8_2 Black pawn, b7_2 Black pawn, c6_2 Black pawn
+
+  b7_2 -> a8_2 : successful attack (3 vs 1)
+
 ## The rules of stacking
 
 When 3 pawns from the same player occupy the same position on all 3 boards (a stack of 3 pawns), then each receives 3 defense points and 3 attack points.
 
 When such a stack is formed, the existing pawn attack/defense points will be replaced with 3.
 
-There is no addition of existing points, so be careful with this.
+Be carefull with this, the number of defense points could be higher and it will be reseted to 3 in this case.
 
 Example:
 
