@@ -206,6 +206,8 @@ b2 c2 d2 d3 d4 b4 c4 b3
 
 Any friendly pawn on these positions will receive an additional defense point from the c3 pawn.
 
+c3_1 and d3_1 pawns have both 2 attack/defense points.
+
 Examples:
 
 ![Rules of defending](imgs/NervaRulesOfDefending.png)
@@ -284,7 +286,9 @@ Examples:
 
 ## The rules of stacking
 
-When 3 pawns from the same player occupy the same position on all 3 boards (a stack of 3 pawns), then each receives 3 defense points and 3 attack points.
+When 3 pawns from the same player occupy the same position on all 3 boards (a stack of 3 pawns),
+
+then each receives 3 defense and 3 attack points.
 
 When such a stack is formed, the existing pawn attack/defense points will be replaced with 3.
 
