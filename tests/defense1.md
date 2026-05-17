@@ -1,6 +1,6 @@
-# defense on one board (depth 1)
+# Defense 1
 
-![5. Defense on one board (depth 1) ](imgs/Defense1Board1Depth.png)
+![Example defense 1](imgs/Defense1.png)
 
 Notation:
 

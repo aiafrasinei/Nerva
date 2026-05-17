@@ -1,6 +1,6 @@
-# offense on one board (depth 1)
+# attack 5
 
-![6. Offense one board (depth 1)](imgs/Offense1Board1Depth.png)
+![Example attack 5](imgs/Attack5.png)
 
 Notation:
 
