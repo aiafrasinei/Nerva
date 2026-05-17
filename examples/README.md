@@ -1,10 +1,8 @@
-# tests
+# examples
 
-The tests contains various intreasting board configuration.
+The examples contains various interesting board configuration.
 
 Format is board configuration , properties, result.
-
-Goal is to find potential problems with the rules and understand the game better.
 
 Can be used by the players to learn the game.
 
@@ -50,7 +48,7 @@ Result:
 
 <hr>
 
-![Attack example 2](imgs/Attack1.png)
+![Example attack 2](imgs/Attack1.png)
 
 Notation:
 
@@ -70,7 +68,7 @@ Result:
 
 <hr>
 
-![Attack example 3](imgs/Attack2.png)
+![Example attack 3](imgs/Attack2.png)
 
 Notation:
 
@@ -90,7 +88,7 @@ Result:
 
 <hr>
 
-![Attack example 4](imgs/Attack3.png)
+![Example attack 4](imgs/Attack3.png)
 
 Notation:
 
@@ -110,7 +108,7 @@ Result:
 
 <hr>
 
-![Attack example 5](imgs/Attack4.png)
+![Example attack 5](imgs/Attack4.png)
 
 Notation:
 
@@ -157,7 +155,7 @@ e5_1 -> f4_1 : successful attack (4 vs 1)
 
 ## Defense
 
-![Defense example 0](imgs/Defense0.png)
+![Example defense 0](imgs/Defense0.png)
 
 Notation:
 
@@ -200,6 +198,28 @@ Properties:
 
 Result:
 
-Max defense for a pawn on a single board using depth 1.
+Max defense for a pawn on a single board.
 
 <hr>
+
+![Example defense 2](imgs/Defense2.png)
+
+Notation:
+
+1. d4_1 2. e4_1 3. c4_1 4. f4_1 5. d5_1 6. e5_1 7. d6_1
+
+Properties:
+
+| Position | Attack Points | Defense Points |
+| :--- | :--- | :--- |
+| d4_1 | 1 | 3 |
+| e4_1 | 1 | 3 |
+| c4_1 | 2 | 2 |
+| f4_1 | 2 | 2 |
+| d5_1 | 1 | 3 |
+| e5_1 | 2 | 2 |
+| d6_1 | 1 | 2 |
+
+Result:
+
+Examples of defense calculations on single board.

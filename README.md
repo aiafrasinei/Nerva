@@ -136,11 +136,11 @@ If a pawn is at c3, the adjacent tiles are:
 
 b2 c2 d2 d3 d4 b4 c4 b3
 
-The attack and defense will happen on these adjacent tiles on the same board.
+The attack will happen on these adjacent tiles on the same board.
 
 ![PawnAttacks](imgs/NervaPawnAttack.png)
 
-More details in the rules of defending, attacking, stacking sections. 
+More details in the rules of linking, defending, attacking, stacking sections. 
 
 ### The king
 
@@ -196,17 +196,63 @@ The White player places a pawn, and then the players take turns placing pawns.
 
 The game is over when one king is captured or all pawns are placed. 
 
+## The rules of linking
+
+Any 2 adjacent friendly pieces are linked they will share attack or defense points.
+
+There are 2 types of linking:
+
+* Attack
+
+  A pawn will share an attack point to any diagonal friendly pawn.
+
+  ![Rules of linking attack](imgs/NervaLinkingAttack.png)
+
+  Notation:
+
+  1. e3_1 2. d4_1 3. f4_1 4. f2_1 5. d2_1
+
+  Properties:
+
+  | Position | Attack Points | Defense Points |
+  | :--- | :--- | :--- |
+  | e3_1 | 5 | 1 |
+  | d4_1 | 2 | 1 |
+  | f4_1 | 2 | 1 |
+  | f2_1 | 2 | 1 |
+  | d2_1 | 2 | 1 |
+  
+* Defense
+  
+  A pawn will share an defense point to any friendly pawns place on the horizontal, vertical positions.
+
+  ![Rules of linking attack](imgs/NervaLinkingDefense.png)
+
+  Notation:
+
+  1. e3_1 2. e4_1 3. f3_1 4. e2_1 5. d3_1
+
+  Properties:
+
+  | Position | Attack Points | Defense Points |
+  | :--- | :--- | :--- |
+  | e3_1 | 1 | 5 |
+  | d4_1 | 1 | 2 |
+  | f4_1 | 1 | 2 |
+  | f2_1 | 1 | 2 |
+  | d2_1 | 1 | 2 |
+
 ## The rules of defending
 
-A pawn will add an attack/defense point to all adjacent friendly pawns (or king) on the same board.
+A pawn will add a defense point to adjacent horizontal, vertical friendly piece on the same board.
 
 If a pawn is at c3, the adjacent tiles are:
 
-b2 c2 d2 d3 d4 b4 c4 b3
+c4 d3 c2 b3
 
 Any friendly pawn on these positions will receive an additional defense point from the c3 pawn.
 
-c3_1 and d3_1 pawns have both 2 attack/defense points.
+c3_1 and d3_1 pawns both have 2 defense points.
 
 Examples:
 

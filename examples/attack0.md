@@ -1,6 +1,6 @@
 # attack 0
 
-![Example defense 1](imgs/Attack0.png)
+![Attack example 0](imgs/Attack0.png)
 
 Notation:
 
