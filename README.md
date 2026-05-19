@@ -198,7 +198,7 @@ The game is over when one king is captured or all pawns are placed.
 
 ## The rules of linking
 
-Any 2 adjacent friendly pieces are linked they will share attack or defense points.
+Any 2 adjacent friendly pieces are linked, they will share attack or defense points.
 
 There are 2 types of linking:
 
@@ -224,7 +224,7 @@ There are 2 types of linking:
   
 * Defense
   
-  A pawn will share an defense point to any friendly pawns place on the horizontal, vertical positions.
+  A pawn will share a defense point to any friendly pawns placed on the horizontal, vertical positions.
 
   ![Rules of linking attack](imgs/NervaLinkingDefense.png)
 
@@ -260,33 +260,54 @@ Examples:
 
 * Case 1
 
-  f3_2 White pawn, g2_2 Black pawn, h1_2 White pawn
+  | Position | Attack Points | Defense Points |
+  | :--- | :--- | :--- |
+  | f3_2 | 1 | 1 |
+  | g2_2 | 1 | 1 |
+  | h1_2 | 1 | 1 |
 
-  Any attack will fail, each piece here have 1 attack/defense point.
+  h1_2 -> g2_2 : attack successful (2 vs 1)
 
 * Case 2
 
-  d2_1 White pawn, d3_1 Black pawn, c3_1 Black pawn
+  | Position | Attack Points | Defense Points |
+  | :--- | :--- | :--- |
+  | d2_1 | 1 | 1 |
+  | d3_1 | 1 | 2 |
+  | c3_1 | 1 | 2 |
 
   d2_1 -> d3_1 : failed attack (1 vs 2)
 
 * Case 3
 
-  a1_3 Black pawn, b1_3 White pawn, a2_3 White pawn
+  | Position | Attack Points | Defense Points |
+  | :--- | :--- | :--- |
+  | a1_3 | 1 | 1 |
+  | b1_3 | 2 | 1 |
+  | a2_3 | 2 | 1 |
 
-  a1_3 -> b1_3 : failed attack (1 vs 2)
+  a1_3 -> b1_3 : failed attack (1 vs 1)
 
 * Case 4
 
-  a8_2 White pawn, a7_2 White pwan, a6_3 White Pawn c8_2 Black pawn, b7_2 Black pawn, c6_2 Black pawn
+  | Position | Attack Points | Defense Points |
+  | :--- | :--- | :--- |
+  | a8_2 | 1 | 2 |
+  | a7_2 | 1 | 3 |
+  | a6_2 | 1 | 2 |
+  | c8_2 | 1 | 1 |
+  | b7_2 | 3 | 1 |
+  | c6_2 | 1 | 1 |
 
   b7_2 -> a7_2 : failed attack (3 vs 3)
 
   b7_2 -> a8_2 : successful attack (3 vs 2)
 
-  a6_2 -> b7_2 : failed attack (2 vs 3)
+  a6_2 -> b7_2 : failed attack (1 vs 3)
 
 ## The rules of attacking
+
+The rules of linking apply to all pawns.
 
 A pawn will add an attack point to all adjacent enemy pawns (or king) on the same board.
 
@@ -306,27 +327,45 @@ Examples:
 
 * Case 1
 
-  f5_2 White pawn, e6_2 Black pawn, g6_1 Black pawn
+  | Position | Attack Points | Defense Points |
+  | :--- | :--- | :--- |
+  | f5_2 | 1 | 1 |
+  | e6_2 | 1 | 1 |
+  | g6_1 | 1 | 1 |
 
-  e6_2 -> f5_2 : failed attack, both have one attack/defense points
+  e6_2 -> f5_2 : failed attack (1 vs 1)
 
   g6_1 Black pawn is on another board, cannot attack.
 
 * Case 2
 
-  d2_1 White pawn, d3_1 Black pawn, c3_1 Black pawn
+  | Position | Attack Points | Defense Points |
+  | :--- | :--- | :--- |
+  | d2_1 | 1 | 1 |
+  | d3_1 | 2 | 2 |
+  | c3_1 | 1 | 3 |
+  | c4_1 | 2 | 2 |
 
   d3_1 -> d2_1 : successful attack (2 vs 1)
 
 * Case 3
 
-  a1_3 Black pawn, b1_3 White pawn, a2_3 White pawn
+  | Position | Attack Points | Defense Points |
+  | :--- | :--- | :--- |
+  | a1_3 | 1 | 1 |
+  | b1_3 | 2 | 1 |
+  | a2_3 | 2 | 1 |
 
   b1_3 -> a1_3 : successful attack (2 vs 1)
 
 * Case 4
 
-  a8_2 White pawn, c8_2 Black pawn, b7_2 Black pawn, c6_2 Black pawn
+  | Position | Attack Points | Defense Points |
+  | :--- | :--- | :--- |
+  | a8_2 | 1 | 1 |
+  | c8_2 | 2 | 1 |
+  | b7_2 | 3 | 1 |
+  | c6_2 | 2 | 1 |
 
   b7_2 -> a8_2 : successful attack (3 vs 1)
 
@@ -350,6 +389,26 @@ Example:
 ## Goal 
 
 The goal is to reveal and capture the enemy king.
+
+## Endgame
+
+Once a king is revealed the player will place the king on the board.
+
+The king has 0 attack and 0 defense points, the rules of linking apply in same way.
+
+While the king is not yet revealed the player have the option to add some defenses to the king location.
+
+The game will be over if an attack is successful on a king (king is captured).
+
+Example:
+
+![Stacks](imgs/NervaBoardEndgame.png)
+
+* Notation
+
+1. K_f6_1 2. g6_1 -> f6_1 3. -K_f6_1
+
+Black king is revealed and then captured, game is over. 
 
 ## Credits, contact
 
