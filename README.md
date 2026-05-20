@@ -4,7 +4,7 @@ by Afrasinei Alexandru Iulian
 
 ## Introduction
 
-Nerva is a board game that utilizes a standard chess board and 192 pawns + 2 kings.
+Nerva is a board game that uses a standard chess board and 192 pawns + 2 kings.
 
 Two opposing forces (White and Black) face each other in battle on the game board.
 
@@ -54,9 +54,9 @@ A standard chess board (8x8).
 
 ### The battle environment
 
-A maximum of 3 pawns can be placed on top of each other anywhere on the board.
+A maximum of three pawns can be placed on top of each other anywhere on the board.
 
-Think of the board as 3 stacked boards on top of each other.
+Think of the environment as three boards stacked on top of each other.
 
 ### Game notation
 
@@ -166,15 +166,15 @@ The king's location is hidden from the enemy player.
 
 Each player decides at the beginning where their king will be located and keeps the information to themselves.
 
-The chosen location can by anywhere on the 3 boards, use the game notation.
+The chosen location can be anywhere on the 3 boards, use the game notation.
 
 Each player will write the position on a piece of paper.
 
-When a player places a pawn on the king position the king will be revealed.
+When a player places a pawn on the king's position, the king will be revealed.
 
 The player knows the location and will place his king on the board.
 
-In the unlikely event of both player chosing the same king location:
+In the unlikely event of both players choosing the same king location:
 
 * place the white king in the location when revealed
 
@@ -198,7 +198,7 @@ The game is over when one king is captured or all pawns are placed.
 
 ## The rules of linking
 
-Any 2 adjacent friendly pieces are linked, they will share attack or defense points.
+Any two adjacent friendly pieces are linked, they share attack or defense points.
 
 There are 2 types of linking:
 
@@ -376,7 +376,7 @@ Examples:
 
 ## The rules of stacking
 
-When 2 pawns of the same player ocuppy the same position on 2 neighbouring tables,
+When 2 pawns of the same player occupy the same position on 2 stacked boards,
 
 then each receives 2 defense and 2 attack points.
 
@@ -384,9 +384,9 @@ For a stack of 3 pawns, each receives 3 defense and 3 attack points.
 
 When such a stack is formed, the existing pawn attack/defense points will be replaced with 3 or 2.
 
-Be carefull with this,
+Be careful with this, 
 
-the number of existing attack/defense points could be higher and it will be reseted in this case.
+the number of existing attack/defense points could be higher and it will be reset in this case.
 
 Example:
 
@@ -401,11 +401,11 @@ The goal is to reveal and capture the enemy king.
 
 ## Endgame
 
-Once a king is revealed the player will place the king on the board.
+Once a king is revealed, the player will place the king on the board.
 
-The king has 0 attack and 0 defense points, the rules of linking apply in same way.
+The king has 0 attack and 0 defense points, the rules of linking apply in the same way.
 
-While the king is not yet revealed the player have the option to add some defenses to the king location.
+While the king is not yet revealed, the player has the option to add some defenses to the king's location.
 
 The game will be over if an attack is successful on a king (king is captured).
 
