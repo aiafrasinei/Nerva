@@ -10,7 +10,11 @@ Two opposing forces (White and Black) face each other in battle on the game boar
 
 It is a turn-based wargame in the spirit of chess with different rules.
 
-The goal is to capture the enemy king.
+Pawns can be stacked three levels high, linked for bonuses, and kings remain hidden until discovered.
+
+The goal is to reveal the enemy king's location and capture it to claim victory.
+
+Have fun!
 
 ## The elements of Nerva
 
