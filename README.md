@@ -138,7 +138,7 @@ b2 c2 d2 d3 d4 b4 c4 b3
 
 The attack will happen on these adjacent tiles on the same board.
 
-![PawnAttacks](imgs/NervaPawnAttack.png)
+![Pawn Attacks](imgs/NervaPawnAttack.png)
 
 More details in the rules of linking, defending, attacking, stacking sections. 
 
@@ -172,7 +172,7 @@ Each player will write the position on a piece of paper.
 
 When a player places a pawn on the king position the king will be revealed.
 
-The player will place his king on the board.
+The player knows the location and will place his king on the board.
 
 In the unlikely event of both player chosing the same king location:
 
@@ -226,7 +226,7 @@ There are 2 types of linking:
   
   A pawn will share a defense point to any friendly pawns placed on the horizontal, vertical positions.
 
-  ![Rules of linking attack](imgs/NervaLinkingDefense.png)
+  ![Rules of linking defense](imgs/NervaLinkingDefense.png)
 
   Notation:
 
@@ -256,7 +256,7 @@ c3_1 and d3_1 pawns both have 2 defense points.
 
 Examples:
 
-![Rules of defending](imgs/NervaRulesOfDefending.png)
+![Rules of defending 1](imgs/NervaRulesOfDefending1.png)
 
 * Case 1
 
@@ -278,7 +278,10 @@ Examples:
 
   d2_1 -> d3_1 : failed attack (1 vs 2)
 
-* Case 3
+
+![Rules of defending 2](imgs/NervaRulesOfDefending2.png)
+
+* Case 1
 
   | Position | Attack Points | Defense Points |
   | :--- | :--- | :--- |
@@ -288,7 +291,7 @@ Examples:
 
   a1_3 -> b1_3 : failed attack (1 vs 1)
 
-* Case 4
+* Case 2
 
   | Position | Attack Points | Defense Points |
   | :--- | :--- | :--- |
@@ -323,7 +326,7 @@ If you make a mistake and make an unsuccessful attack, the turn will change.
 
 Examples:
 
-![Rules of attacking](imgs/NervaRulesOfAttacking.png)
+![Rules of attacking 1](imgs/NervaRulesOfAttacking1.png)
 
 * Case 1
 
@@ -348,7 +351,9 @@ Examples:
 
   d3_1 -> d2_1 : successful attack (2 vs 1)
 
-* Case 3
+![Rules of attacking 2](imgs/NervaRulesOfAttacking2.png)
+
+* Case 1
 
   | Position | Attack Points | Defense Points |
   | :--- | :--- | :--- |
@@ -358,7 +363,7 @@ Examples:
 
   b1_3 -> a1_3 : successful attack (2 vs 1)
 
-* Case 4
+* Case 2
 
   | Position | Attack Points | Defense Points |
   | :--- | :--- | :--- |
@@ -371,13 +376,17 @@ Examples:
 
 ## The rules of stacking
 
-When 3 pawns from the same player occupy the same position on all 3 boards (a stack of 3 pawns),
+When 2 pawns of the same player ocuppy the same position on 2 neighbouring tables,
 
-then each receives 3 defense and 3 attack points.
+then each receives 2 defense and 2 attack points.
 
-When such a stack is formed, the existing pawn attack/defense points will be replaced with 3.
+For a stack of 3 pawns, each receives 3 defense and 3 attack points.
 
-Be carefull with this, the number of defense points could be higher and it will be reseted to 3 in this case.
+When such a stack is formed, the existing pawn attack/defense points will be replaced with 3 or 2.
+
+Be carefull with this,
+
+the number of existing attack/defense points could be higher and it will be reseted in this case.
 
 Example:
 
