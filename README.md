@@ -16,6 +16,35 @@ The goal is to reveal the enemy king's location and capture it to claim victory.
 
 Have fun!
 
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+
 ## The elements of Nerva
 
 * one chess board (8x8)
@@ -50,6 +79,13 @@ Have fun!
 
     * the Black king
 
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+
 ## The board
 
 A standard chess board (8x8).
@@ -70,17 +106,11 @@ This is extended for Nerva by using the following syntax to identify the stacked
 
 [row][column]_[board] - A pawn is placed on the board.
 
-* [row]
-  
-  From a to h
+* [row] From a to h
 
-* [column]
+* [column] From 1 to 8
 
-    From 1 to 8
-
-* [board]
-
-    From 1 to 3
+* [board] From 1 to 3
 
     Board 1 is the normal chess board
 
@@ -91,6 +121,7 @@ This is extended for Nerva by using the following syntax to identify the stacked
 [K]_[row][column]_[board] - King reveal.
 
 [-K]_[row][column]_[board] - King is captured, game over.
+
 
 Examples:
 
@@ -150,6 +181,10 @@ More details in the rules of linking, defending, attacking, stacking sections.
 
 The king has no attack/defense points.
 
+</br>
+</br>
+</br>
+
 ## The rules of placement
 
 ### Setup
@@ -183,6 +218,20 @@ In the unlikely event of both players choosing the same king location:
 * place the white king in the location when revealed
 
 * play normally as if both kings are in that location 
+
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
 
 Example:
 
@@ -312,6 +361,10 @@ Examples:
 
   a6_2 -> b7_2 : failed attack (1 vs 3)
 
+</br>
+</br>
+</br>
+
 ## The rules of attacking
 
 The rules of linking apply to all pawns.
@@ -327,6 +380,33 @@ If the attack points are higher than the defense points on a particular pawn, th
 The pawn will be removed from the board and replaced by another pawn from the attacker.
 
 If you make a mistake and make an unsuccessful attack, the turn will change.
+
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+
 
 Examples:
 
@@ -378,6 +458,13 @@ Examples:
 
   b7_2 -> a8_2 : successful attack (3 vs 1)
 
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+
 ## The rules of stacking
 
 When 2 pawns of the same player occupy the same position on 2 stacked boards,
@@ -398,6 +485,12 @@ Example:
 
 * Notation
 1. f4_1 2. e5_1 3. f4_2 4. e5_2 5. f4_3 6. e5_3
+
+</br>
+</br>
+</br>
+</br>
+</br>
 
 ## Goal 
 
@@ -422,6 +515,10 @@ Example:
 1. K_f6_1 2. g6_1 -> f6_1 3. -K_f6_1
 
 Black king is revealed and then captured, game is over. 
+
+</br>
+</br>
+</br>`
 
 ## Credits, contact
 
