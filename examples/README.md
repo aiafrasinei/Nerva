@@ -1,4 +1,4 @@
-# examples
+# Examples
 
 The examples contains various interesting board configuration.
 
@@ -10,7 +10,7 @@ Examples:
 
 ## Attack
 
-![Example attack 0](imgs/Attack0.png)
+![Example attack 1](imgs/Attack1.png)
 
 Notation:
 
@@ -29,7 +29,7 @@ Result:
 
 <hr>
 
-![Example attack 1](imgs/Attack6.png)
+![Example attack 2](imgs/Attack7.png)
 
 Notation:
 
@@ -48,7 +48,7 @@ Result:
 
 <hr>
 
-![Example attack 2](imgs/Attack1.png)
+![Example attack 3](imgs/Attack2.png)
 
 Notation:
 
@@ -68,7 +68,7 @@ Result:
 
 <hr>
 
-![Example attack 3](imgs/Attack2.png)
+![Example attack 4](imgs/Attack3.png)
 
 Notation:
 
@@ -88,7 +88,7 @@ Result:
 
 <hr>
 
-![Example attack 4](imgs/Attack3.png)
+![Example attack 5](imgs/Attack4.png)
 
 Notation:
 
@@ -108,7 +108,7 @@ Result:
 
 <hr>
 
-![Example attack 5](imgs/Attack4.png)
+![Example attack 6](imgs/Attack5.png)
 
 Notation:
 
@@ -131,7 +131,7 @@ Result:
 
 <hr>
 
-![Example attack 6](imgs/Attack5.png)
+![Example attack 7](imgs/Attack6.png)
 
 Notation:
 
@@ -155,7 +155,7 @@ e5_1 -> f4_1 : successful attack (4 vs 1)
 
 ## Defense
 
-![Example defense 0](imgs/Defense0.png)
+![Example defense 1](imgs/Defense1.png)
 
 Notation:
 
@@ -176,7 +176,7 @@ Result:
 
 <hr>
 
-![Example defense 1](imgs/Defense1.png)
+![Example defense 2](imgs/Defense2.png)
 
 Notation:
 
@@ -202,7 +202,7 @@ Max defense for a pawn on a single board.
 
 <hr>
 
-![Example defense 2](imgs/Defense2.png)
+![Example defense 3](imgs/Defense3.png)
 
 Notation:
 
